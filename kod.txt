@@ -1,0 +1,5 @@
+import statsmodels.api as sm
+import matplotlib.pyplot as plt 
+fig=sm.graphics.tsa.plot_acf(df["Price"], lags=10)
+fig=sm.graphics.tsa.plot_acf(df["Getiri"], lags=10)
+plt.show()
